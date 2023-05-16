@@ -1,0 +1,12 @@
+﻿@model CustomIdentityApp.ViewModels.LoginViewModel
+@{
+    ViewData["Title"] = "Cars Page";
+}
+
+
+<form class ="order">
+    <h2 class="order_title">Оставь заявку тут</h2>
+    <input class="order_container-email" placeholder="Твой email" asp-for="Email" />
+    <textarea placeholder="Comment..." class="order_container-text"></textarea>
+    <a asp-area="" asp-controller="Home" asp-action="Index" class="order_container-btn">Отправить</a>
+</form>
